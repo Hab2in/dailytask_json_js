@@ -98,7 +98,7 @@ console.log(tugas1)
 
           // 2) print berapa person yang age nya diatas 30 
 
-console.log("Ini No.2 person yang age nya diatas 30 ")
+console.log("Ini No.2 berapa person yang age nya diatas 30 ")
 const tugas2 = person.filter(twoFunction);
 
 function twoFunction(value){
