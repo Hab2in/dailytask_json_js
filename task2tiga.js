@@ -368,69 +368,92 @@ const people =
         }
     ]
 
-// wajib ada yang menggunakan array method FIND, FILTER atau MAP dalam pengerjaannya.
+// // wajib ada yang menggunakan array method FIND, FILTER atau MAP dalam pengerjaannya.
 
-// 1) display/print person yang registered dibawah tahun 2022
+// // // 1) display/print person yang registered dibawah tahun 2022
+// console.log(">>>>>>>>>>>>INI NOMOR 1<<<<<<<<<<<<<")
+// const tugas1 = people.filter(oneFunction);
+// function oneFunction(value){
+//     if(value.registered < "2022") {
+//         return value
+//     }
+// }
+// console.log(tugas1)
 
+// // // // 2) display person yang address nya Bali 
 
-// 2) display person yang address nya Bali 
-console.log("INI NOMOR 2")
-const inBali = people.filter(value => {
-    if(value.address === "Bali") {
-        return value
-    }
-})
-console.log(inBali)
+// console.log("I>>>>>>>>>>>>INI NOMOR 2<<<<<<<<<<<<<")
+// const inBali = people.filter(value => {
+//     if(value.address === "Bali") {
+//         return value
+//     }
+// })
+// console.log(inBali)
 
-// 3) display friends yang hobby nya football
-console.log("INI NOMOR 3")
-for(let i = 0; i< people.length; i++){
-    for(let j = 0; j < people[i].friends.length; j++){
-        for( let h = 0; h < people[i].friends[j].hobby.length; h++){
-            if(people[i].friends[j].hobby[h].hobby === "football"){
-                console.log(people[i].friends[j].name)
-            }
-        }
-    }
-}
+// // // // 3) display friends yang hobby nya football
+// console.log(">>>>>>>>>>>>INI NOMOR 3<<<<<<<<<<<<<")
+// for(let i = 0; i< people.length; i++){
+//     for(let j = 0; j < people[i].friends.length; j++){
+//         for( let h = 0; h < people[i].friends[j].hobby.length; h++){
+//             if(people[i].friends[j].hobby[h].hobby === "football"){
+//                 console.log(people[i].friends[j])
+//             }
+//         }
+//     }
+// }
 
-// 4) display hobby dari friends id 2
-console.log("INI NOMOR 4")
-let idDua = people.map( value => {
-    return value.friends.filter(object => {
-        return object.id == 2
-    })
-})
-console.log(idDua)
-
-
-// 5) display friends yang gender nya male dan mempunya hobby basketball
-
-console.log("INI NOMOR 5")
-for(let i = 0; i< people.length; i++){
-    for(let j = 0; j < people[i].friends.length; j++){
-        for( let h = 0; h < people[i].friends[j].hobby.length; h++){
-            if(people[i].friends[j].gender === "male" && people[i].friends[j].hobby[h].hobby === "basketball"){
-                console.log(people[i].friends[j])
-            }
-        }
-    }
-}
+// // // // 4) display hobby dari friends id 2
+// console.log("INI NOMOR 4")
+// let idDua = people.map( value => {
+//     return value.friends.filter(object => {
+//         return object.id == 2
+//     })
+// })
+// console.log(idDua)
 
 
+// // // // 5) display friends yang gender nya male dan mempunya hobby basketball
 
-// 6) display friends yang isActive nya true dan gender nya female dan favorite fruit nya strawberry
-console.log("INI NOMOR 6")
-for(let i = 0; i< people.length; i++){
-    for(let j = 0; j < people[i].friends.length; j++){
-        for( let h = 0; h < people[i].friends[j].favoriteFruit.length; h++){
-            if(people[i].friends[j].isActive === true && people[i].friends[j].gender === "female" && people[i].friends[j].favoriteFruit[h] === "strawberry"){
-                console.log(people[i].friends[j])
-            }
-        }
-    }
-}
-// 7) display siapa saja yang mempunya teman name Theresia
-// 8) display hobby id 1 dari friends yang isActive nya true
-// 9) display person yang eye color nya brown dan favorite fruit nya banana dan mempunyai teman hobby basketball
-// 10) display person yang mempunya friends gender male atau favorite fruit nya banana dan registered di tahun 2023
+// console.log(">>>>>>>>>>>>>INI NOMOR 5<<<<<<<<<<<")
+// for(let i = 0; i< people.length; i++){
+//     for(let j = 0; j < people[i].friends.length; j++){
+//         for( let h = 0; h < people[i].friends[j].hobby.length; h++){
+//             if(people[i].friends[j].gender === "male" && people[i].friends[j].hobby[h].hobby === "basketball"){
+//                 console.log(people[i].friends[j])
+//             }
+//         }
+//     }
+// }
+
+
+
+// // // 6) display friends yang isActive nya true dan gender nya female dan favorite fruit nya strawberry
+
+// console.log(">>>>>>>>>>>>INI NOMOR 6<<<<<<<<<<<<<")
+// for (let i = 0; i < people.length; i++) {
+//     for (let j = 0; j < people[i].friends.length; j++) {
+//         if (people[i].friends[j].isActive === true) {
+//             if (people[i].friends[j].gender === "female" && people[i].friends[j].favoriteFruit === "strawberry") {
+//                 console.log(people[i].friends[j])
+//             } else {
+//                 console.log ("Tidak Ada Data")
+//             }
+//         } 
+//     } break
+// }
+
+
+// // 7) display siapa saja yang mempunya teman name Theresia
+// console.log(">>>>>>>>>>>>INI NOMOR 7<<<<<<<<<<<<<")
+// let friendName = people.map( value => {
+//     return value.friends.filter(lookFor => {
+//         return lookFor.name == "Theresia"
+//     })
+// })
+// console.log(friendName)
+
+
+// // 8) display hobby id 1 dari friends yang isActive nya true
+// // 9) display person yang eye color nya brown dan favorite fruit nya banana dan mempunyai teman hobby basketball
+
+// // 10) display person yang mempunya friends gender male atau favorite fruit nya banana dan registered di tahun 2023
