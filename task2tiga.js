@@ -381,7 +381,7 @@ function oneFunction(value){
 }
 console.log(tugas1)
 
-// // // // 2) display person yang address nya Bali 
+// // // // // 2) display person yang address nya Bali 
 
 console.log("I>>>>>>>>>>>>INI NOMOR 2<<<<<<<<<<<<<")
 const inBali = people.filter(value => {
@@ -391,7 +391,7 @@ const inBali = people.filter(value => {
 })
 console.log(inBali)
 
-// // // // 3) display friends yang hobby nya football
+// // // // // 3) display friends yang hobby nya football
 
 console.log(">>>>>>>>>>>>INI NOMOR 3<<<<<<<<<<<<<")
 for(let i = 0; i< people.length; i++){
@@ -404,7 +404,7 @@ for(let i = 0; i< people.length; i++){
     }
 }
 
-// // // // 4) display hobby dari friends id 2
+// // // // // 4) display hobby dari friends id 2
 
 console.log(">>>>>>>>>>INI NOMOR 4<<<<<<<<<<<<")
 let idDua = people.map( value => {
@@ -415,7 +415,7 @@ let idDua = people.map( value => {
 console.log(idDua)
 
 
-// // // // 5) display friends yang gender nya male dan mempunya hobby basketball
+// // // // // 5) display friends yang gender nya male dan mempunya hobby basketball
 
 console.log(">>>>>>>>>>>>>INI NOMOR 5<<<<<<<<<<<")
 for(let i = 0; i< people.length; i++){
@@ -430,7 +430,7 @@ for(let i = 0; i< people.length; i++){
 
 
 
-// // // 6) display friends yang isActive nya true dan gender nya female dan favorite fruit nya strawberry
+// // // // 6) display friends yang isActive nya true dan gender nya female dan favorite fruit nya strawberry
 
 console.log(">>>>>>>>>>>>INI NOMOR 6<<<<<<<<<<<<<")
 for (let i = 0; i < people.length; i++) {
@@ -446,7 +446,8 @@ for (let i = 0; i < people.length; i++) {
 }
 
 
-// // 7) display siapa saja yang mempunya teman name Theresia
+// // // 7) display siapa saja yang mempunya teman name Theresia
+
 console.log(">>>>>>>>>>>>INI NOMOR 7<<<<<<<<<<<<<")
 let friendName = people.map( value => {
     return value.friends.filter(lookFor => {
@@ -457,6 +458,28 @@ console.log(friendName)
 
 
 // // 8) display hobby id 1 dari friends yang isActive nya true
+console.log(">>>>>>>>>>INI NOMOR 8<<<<<<<<<<")
+let noEight = people.map( value => {
+    return value.friends.filter(idF => {
+        return idF.id == 1 && idF.isActive == true
+    })
+}) 
+console.log(noEight)
+
+
 // // 9) display person yang eye color nya brown dan favorite fruit nya banana dan mempunyai teman hobby basketball
 
+
+
 // // 10) display person yang mempunya friends gender male atau favorite fruit nya banana dan registered di tahun 2023
+// NOTE: Kurang registered di tahun 2023
+console.log(">>>>>>>>>>INI NOMOR 10<<<<<<<<<<")
+let noTen = people.map( value => {
+    return value.friends.filter(ten => {
+        return (ten.gender == "male" || ten.favoriteFruit == "banana")
+    }) 
+}) 
+
+console.log(noTen)
+
+
